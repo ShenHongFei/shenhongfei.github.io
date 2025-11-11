@@ -2228,7 +2228,8 @@ async function get_public_ports() {
         headers: {
             'x-lc-id': 'NGqlTslhYvngIMDG4a1hTFrz-gzGzoHsz',
             'x-lc-key': 'z3F36uJWrDnJqOpXVC03IrzQ'
-        }
+        },
+        credentials: 'omit'
     });
 }
 async function select_url() {
