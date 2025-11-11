@@ -2239,14 +2239,14 @@ async function select_url() {
     }
     catch { }
     try {
-        return `https://4.${shfcom}:${(await get_public_ports())[9443]}${location.pathname}`;
+        return `https://4.${shfcom}:${(await get_public_ports())[9443]}`;
     }
     catch (error) {
         console.error(error);
         return url6;
     }
 }
-location.href = await select_url();
+location.href = (await select_url()) + location.pathname;
 
 __webpack_async_result__();
 } catch(e) { __webpack_async_result__(e); } }, 1);
