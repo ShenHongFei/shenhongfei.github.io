@@ -2239,7 +2239,7 @@ async function select_url() {
     }
     catch { }
     try {
-        return `https://4.${shfcom}:${(await get_public_ports())[9443]}`;
+        return `https://4.${shfcom}:${(await get_public_ports())[9443]}${location.pathname}`;
     }
     catch (error) {
         console.error(error);
